@@ -1,4 +1,4 @@
-#!/usr/bin/php
+#!/usr/local/bin/php
 <?php
 
 // Load shared functions.
@@ -26,7 +26,3 @@ catch (exception $e) {
 
 // ------- Utility functions -----------------------------------------------
 
-function _clean_up_import($dir) {
-  git_log("Cleaning up import temp directory $dir.", 'DEBUG');
-  passthru('rm -Rf ' . escapeshellarg($dir));
-}
